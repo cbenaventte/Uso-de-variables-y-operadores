@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo de Dias</title>
+</head>
+<body>
+    <script>
+        var dias = prompt("Ingrese cantidad de dias:"); // ingreso de variable
+        var años =  Math.floor(parseInt(dias)/365);// calculo de años en valor entero
+        var restoAño = parseInt(dias)%365 
+        var semana = Math.floor(restoAño/7); //calculo de semanas en valor entero
+        var restoSemana = restoAño%7;
+        document.write("Los "+dias+ "dias coresponden a "+años+"año, "+semana+" semanas, "+restoSemana+" dias") //muestra los resultados
+
+
+    </script>
+</body>
+</html>
